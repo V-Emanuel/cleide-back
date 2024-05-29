@@ -7,6 +7,7 @@
 |
 */
 
+import PaymentsController from '#controllers/payments_controller';
 import ProductsController from '#controllers/products_controller';
 import router from '@adonisjs/core/services/router';
 

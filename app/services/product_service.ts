@@ -12,10 +12,11 @@ export default class ProductsService {
                 "title": product.title,
                 "price": product.product_default_variant.price,
                 "compare_at_price": product.product_default_variant.compare_at_price,
-                "url_image": product.images[0].url.replace("/", ""),
+                "url_image": product.images.map((image: any) => image.url.replace("/", "")),
             });
         });
 
         return refactorProducts;
+        return products;
     }
 }

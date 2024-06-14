@@ -40,8 +40,11 @@ export default class ProductsController {
         };
 
         try {
+
             const { data } = await axios.request(options);
-            return data;
+            const productsService = new ProductsService;
+            const processedData = await productsService.productData(data);
+            return processedData;
             
         } catch (error) {
             console.error(error);

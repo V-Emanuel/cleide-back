@@ -12,4 +12,4 @@ import ProductsController from '#controllers/products_controller';
 import router from '@adonisjs/core/services/router';
 
 router.get('products', [ProductsController, 'show']);
-router.get('producs/:id', [ProductsController, 'productById']);
+router.get('products/:id', [ProductsController, 'productById']);

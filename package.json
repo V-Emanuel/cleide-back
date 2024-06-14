@@ -12,7 +12,7 @@
     "lint": "eslint .",
     "format": "prettier --write .",
     "typecheck": "tsc --noEmit",
-  "render-start": "node build/server.js"
+    "render-start": "node build/server.js"
   },
   "imports": {
     "#controllers/*": "./app/controllers/*.js",
